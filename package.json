@@ -1,11 +1,19 @@
 {
   "name": "helloasso",
   "module": "index.ts",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "type": "module",
   "scripts": {
     "build": "bun run build.mjs",
     "prepublishOnly": "bun run build"
+  },
+  "exports": {
+    ".": {
+      "import": {
+		"default": "./dist/index.js",
+		"types": "./dist/index.d.ts"
+      }
+    }
   },
   "files": ["dist"],
   "keywords": ["bun", "helloasso", "api"],
