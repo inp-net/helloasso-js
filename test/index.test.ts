@@ -1,5 +1,5 @@
 import { expect, test } from "bun:test"
-import { ApiV5Client } from "."
+import { ApiV5Client } from "../src/index"
 import "dotenv/config"
 import { z } from "zod"
 

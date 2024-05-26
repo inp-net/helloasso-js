@@ -1,15 +1,28 @@
 # helloasso
 
-To install dependencies:
+Largely converted from the [official Python wrapper](https://github.com/HelloAsso/HaApiV5) to TypeScript.
+
+## Installation
 
 ```bash
-bun install
+npm install helloasso
 ```
 
-To run:
+## Usage
 
-```bash
-bun run index.ts
+```typescript
+import { ApiV5Client as HelloAsso } from "helloasso"
+
+const helloAsso = new HelloAsso({
+  apiBase: "api.helloasso.com",
+  clientId: "your-client-id",
+  clientSecret: "your-client",
+})
+
+const response = await helloAsso.call("/v5/users/me/organizations")
+console.log(await response.json())
 ```
 
-This project was created using `bun init` in bun v1.1.8. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+## Development
+
+This package is developed using [Bun](https://bun.sh).
