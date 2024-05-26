@@ -272,7 +272,7 @@ interface OAuth2TokenSetter {
   ): void
 }
 
-export class ApiV5Client {
+class ApiV5Client {
   private apiBase: string
   private clientId: string
   private clientSecret: string
@@ -473,3 +473,5 @@ export class ApiV5Client {
     }
   }
 }
+
+export { ApiV5Client, OAuth2Api }
