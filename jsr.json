@@ -1,0 +1,5 @@
+{
+		"name": "@net7/helloasso-js",
+		"version": "0.0.4",
+		"exports": "./src/index.ts"
+}

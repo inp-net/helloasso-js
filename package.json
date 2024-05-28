@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "build": "bun run build.mjs",
-    "prepublishOnly": "bun run build"
+    "prepublishOnly": "bun run build",
+	"publish": "npm publish && bunx jsr publish"
   },
   "exports": {
     ".": {
